@@ -206,22 +206,6 @@ DECL_NODES = [
              Child('Members', kind='MemberDeclBlock'),
          ]),
 
-    # prefix-operator-declaration -> 'prefix' '­operator' ­operator­
-    Node('PrefixOperatorDecl', kind='Decl',
-         children=[
-             Child('PrefixKeyword', kind='PrefixToken'),
-             Child('OperatorKeyword', kind='OperatorToken'),
-             Child('Operator', kind='PrefixOperator')
-         ]),
-
-    # postfix-operator-declaration -> 'postfix' '­operator' ­operator­
-    Node('PostfixOperatorDecl', kind='Decl',
-         children=[
-            Child('PostfixKeyword', kind='PostfixToken'),
-            Child('OperatorKeyword', kind='OperatorToken'),
-            Child('Operator', kind='PostfixOperator')
-         ]),
-
     Node('ProtocolDecl', kind='Decl',
          traits=['DeclGroup', 'IdentifiedDecl'],
          children=[
@@ -526,5 +510,21 @@ DECL_NODES = [
                        'LetToken', 'VarToken',
                    ]),
              Child('Bindings', kind='PatternBindingList'),
+         ]),
+    
+    # prefix-operator-declaration -> 'prefix' 'operator' operator
+    Node('PrefixOperatorDecl', kind='Decl',
+         children=[
+             Child('PrefixKeyword', kind='PrefixToken'),
+             Child('OperatorKeyword', kind='OperatorToken'),
+             Child('Operator', kind='PrefixOperator'),
+         ]),
+
+    # postfix-operator-declaration -> 'postfix' 'operator' operator
+    Node('PostfixOperatorDecl', kind='Decl',
+         children=[
+            Child('PostfixKeyword', kind='PostfixToken'),
+            Child('OperatorKeyword', kind='OperatorToken'),
+            Child('Operator', kind='PostfixOperator'),
          ]),
 ]
