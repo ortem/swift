@@ -510,7 +510,7 @@ following fields:
 #### Tokens
 
 A `Token` represents one of the `tok::` enums in
-`include/Syntax/TokenKinds.def`. `Token.py` has a top-level array of token
+`include/swift/Syntax/TokenKinds.def`. `Token.py` has a top-level array of token
 declarations. The `Token` class has the following fields.
 
 | Key | Type | Description |
