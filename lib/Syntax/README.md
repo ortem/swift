@@ -260,7 +260,7 @@ pieces of syntax that aren't really relevant to the semantics of the program,
 such as whitespace and comments. These are modeled as collections and, with the
 exception of comments, are sort of "run-length" encoded. For example, a sequence
 of four spaces is represented by `{ Kind: TriviaKind::Space, Count: 4 }`, not
-the literal text `"    "`.
+the literal text `"    "`.
 
 Some examples of the "atoms" of `Trivia`:
 
