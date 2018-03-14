@@ -502,7 +502,7 @@ following fields:
 
 | Key | Type | Description |
 | --- | ---- | ----------- |
-| `kind` | `String` | The `SyntaxKind` of this child. This must have a corresponding `Node` with that kind. |
+| `kind` | `String` | The `SyntaxKind` of this child. This must have a corresponding `Node` with that kind (or corresponding `Token` in both `include/swift/Syntax/TokenKinds.def` and `SYNTAX_TOKENS`). |
 | `is_optional` | `Bool?` | Whether this child is required in a fully-formed object, or if it is allowed to remain `missing`. Defaults to `false` if not present.
 | `token_choices` | `[String]?` | A list of `Token`s which are considered "valid" values for `Token` children. |
 | `text_choices` | `[String]?` | A list of valid textual values for tokens. If this is not provided, any textual value is accepted for tokens like `IdentifierToken`. |
