@@ -400,3 +400,7 @@ func objectLiterals() {
   #function
   #dsohandle
 }
+
+prefix operator √
+
+postfix operator %

@@ -517,7 +517,7 @@ DECL_NODES = [
          children=[
              Child('PrefixKeyword', kind='PrefixToken'),
              Child('OperatorKeyword', kind='OperatorToken'),
-             Child('Operator', kind='PrefixOperator'),
+             Child('Operator', kind='PrefixOperatorToken'),
          ]),
 
     # postfix-operator-declaration -> 'postfix' 'operator' operator
@@ -525,6 +525,6 @@ DECL_NODES = [
          children=[
             Child('PostfixKeyword', kind='PostfixToken'),
             Child('OperatorKeyword', kind='OperatorToken'),
-            Child('Operator', kind='PostfixOperator'),
+            Child('Operator', kind='PostfixOperatorToken'),
          ]),
 ]

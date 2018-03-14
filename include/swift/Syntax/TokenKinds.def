@@ -169,6 +169,9 @@ DECL_KEYWORD(private)
 DECL_KEYWORD(public)
 DECL_KEYWORD(static)
 
+DECL_KEYWORD(prefix)
+DECL_KEYWORD(postfix)
+
 SIL_KEYWORD(undef)
 SIL_KEYWORD(sil)
 SIL_KEYWORD(sil_stage)
