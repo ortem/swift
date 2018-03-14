@@ -82,6 +82,8 @@ SYNTAX_TOKENS = [
     Keyword('True', 'true'),
     Keyword('Try', 'try'),
     Keyword('Throws', 'throws'),
+    Keyword('Prefix', 'prefix'),
+    Keyword('Postfix', 'postfix'),
     Keyword('__FILE__', '__FILE__'),
     Keyword('__LINE__', '__LINE__'),
     Keyword('__COLUMN__', '__COLUMN__'),
